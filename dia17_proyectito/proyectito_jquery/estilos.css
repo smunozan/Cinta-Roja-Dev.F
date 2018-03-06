@@ -1,0 +1,65 @@
+body{
+	width: 100%;
+	height: 800px;
+	/*border: 2px solid;*/
+}
+
+/*Botones inicio*/
+
+.botones{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn{
+	margin: 30px;
+	width: 20%;
+	height: 10%;
+	font-size: 30px;
+}
+
+/*Crear evento*/
+
+#registrarEvento{
+	z-index: 100;
+	width: 100%;
+	/*height: 100%;*/
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.7);
+	top: 0;
+	left: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.formularioNuevoEvento{
+	width: 40%;
+	background-color: white;
+	border-radius: 5px;
+	padding: 5%;
+
+}
+
+.tituloNuevoEvento{
+	font-size: 30px;
+}
+
+#submitEvento{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#submitEvento button{
+	width: 50%;
+}
+
+#confirmarEvento{
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
