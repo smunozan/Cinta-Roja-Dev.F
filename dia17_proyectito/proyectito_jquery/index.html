@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	
 	<link rel="stylesheet" href="estilos.css">
-    <title>Hello, world!</title>
+    <title>Eventos Proyectito</title>
   </head>
   <body>
 
     <div class="botones">
-    	<button type="button" class="btn btn-secondary btn-lg" id="verEventos">Ver eventos</button>
-    	<button type="button" class="btn btn-secondary btn-lg" id="crearEventos">Crear evento</button>
+    	<button type="button" class="btn btn-secondary btn-lg botonInicial" id="verEventos">Ver eventos</button>
+    	<button type="button" class="btn btn-secondary btn-lg botonInicial" id="crearEventos">Crear evento</button>
     </div>
 	
 	<div class="nuevoEvento" id="registrarEvento">
@@ -42,30 +42,57 @@
 			    <label for="formGroupExampleInput">URL imagen:</label>
 			    <input type="text" class="form-control" id="imagenEvento" placeholder="URL imagen">
 			  </div>
-			  <p>
+			  <div class="form-group">
+			    <label for="formGroupExampleInput"> Capacidad:</label>
+			    <input type="text" class="form-control" id="capacidadEvento" placeholder="Capacidad del evento">
+			  </div>
+			  <!-- fecha string-->
+			  <div class="form-group">
+			    <label for="formGroupExampleInput"> Fecha:</label>
+			    <input type="text" class="form-control" id="fechaEvento" placeholder="Ej: 20 de marzo">
+			  </div>
+			  <!-- fecha con calendario -->
+<!-- 			  <p>
 			  	<label for="date">Fecha</label>
 			    <input type="date" id="fechaEvento">
-			  </p>
-			  <p>
+			  </p>		  
+ -->		  
+ 			  <!-- Hora string-->
+ 			  <div class="form-group">
+ 			    <label for="formGroupExampleInput"> Hora:</label>
+ 			    <input type="text" class="form-control" id="horaEvento" placeholder="Ej: 2:00 PM">
+ 			  </div>
+ 			  <!-- Hora con bootstrap -->
+ 			  <!-- <p>
 			    <label for="time">Hora de inicio</label>
 			    <input type="time" id="horaEvento">
-			  </p>
+			  </p> -->
 			</form>
-			<div id="submitEvento">
-				<button type="button" class="btn btn-secondary btn-lg" id="crearNuevoEvento">Crear evento</button>
+			<div id="vistaEvento">
+				<button type="button" class="btn btn-secondary btn-lg" id="vistaNuevoEvento">Vista previa</button>
 			</div>
 			<div id="confirmarEvento">
 				<div class="card" style="width: 18rem;">
 				  <img class="card-img-top" src="..." alt="Card image cap" id="imagenNuevoEvento">
 				  <div class="card-body">
-				    <h5 class="card-title" id="confNombreEvento"></h5>
-				    <p class="card-text" id="confDescripcionEvento"></p>
-				    <a href="#" class="btn btn-primary">Go somewhere</a>
+				  	<div class="fechaYhora">
+				  		<p class="card-text" id="confFechaEvento"></p>
+				  		<p class="card-text" id="confHoraEvento"></p>
+				  	</div>
+				    <h5 class="card-title nombreEvento" id="confNombreEvento"></h5>
+				    <p class="card-text descripcionEvento" id="confDescripcionEvento"></p>
+				    <p class="card-text capacidadEvento" id="confCapacidadEvento"></p>
+				    <div class="fechaYhora">
+				  		<p class="card-text" id="confOrganizadorEvento"></p>
+				  		<p class="card-text" id="confLugarEvento"></p>
+				  	</div>
 				  </div>
 				</div>
+				<div class="botones">
+					<button type="button" class="btn btn-secondary btn-lg confEvento" id="confirmarNuevoEvento">Crear evento</button>
+				</div>
 			</div>
-
-		</div>	
+				
 	</div>
 
 
@@ -75,5 +102,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   </body>
 </html>

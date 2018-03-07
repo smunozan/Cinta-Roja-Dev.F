@@ -1,6 +1,6 @@
 body{
 	width: 100%;
-	height: 800px;
+	height: 700px;
 	/*border: 2px solid;*/
 }
 
@@ -14,7 +14,7 @@ body{
 	align-items: center;
 }
 
-.btn{
+.botonInicial{
 	margin: 30px;
 	width: 20%;
 	height: 10%;
@@ -48,13 +48,13 @@ body{
 	font-size: 30px;
 }
 
-#submitEvento{
+#vistaEvento{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-#submitEvento button{
+#vistaEvento button{
 	width: 50%;
 }
 
@@ -62,4 +62,57 @@ body{
 	display: none;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
+
+}
+
+#submitEvento{
+	margin-top: 20px;
+}
+
+/*Tarjetas*/
+
+#confirmarEvento{
+	margin: 20px;
+}
+
+.fechaYhora{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+    font-weight: 100;
+}
+
+.card-img-top{
+	max-height: 150px;
+    min-height: 150px;
+    object-fit: cover;
+}
+
+.nombreEvento{
+	text-align: center;
+	font-weight: 700;
+	padding-top: 15px;
+    border-top: 1px solid;
+}
+
+.descripcionEvento{
+	text-align: justify;
+}
+
+.capacidadEvento{
+	text-align: center;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+    font-weight: 100;
+
+}
+
+.botonAsistir{
+	display: flex;
+	justify-content: center;	
+}
+
+.confEvento{
+	margin-top: 20px;
 }

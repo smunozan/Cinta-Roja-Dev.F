@@ -1,0 +1,60 @@
+.botones{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.botonInicial{
+	margin: 30px;
+	width: 20%;
+	height: 10%;
+	font-size: 30px;
+}
+
+#main{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#confirmarEvento{
+	margin: 20px;
+}
+
+.fechaYhora{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+    font-weight: 100;
+}
+
+.card-img-top{
+	max-height: 150px;
+    min-height: 150px;
+    object-fit: cover;
+}
+
+.nombreEvento{
+	text-align: center;
+	font-weight: 700;
+	padding-top: 15px;
+    border-top: 1px solid;
+}
+
+.descripcionEvento{
+	text-align: justify;
+}
+
+.capacidadEvento{
+	text-align: center;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+    font-weight: 100;
+
+}
+
+.botonAsistir{
+	display: flex;
+	justify-content: center;	
+}
