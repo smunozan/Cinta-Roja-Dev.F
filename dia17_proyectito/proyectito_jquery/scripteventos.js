@@ -28,6 +28,16 @@ var eventos = {
 		"capacidadEvento":"100 personas",
 		"fechaEvento":"2018-03-05",
 		"horaEvento":"02:00"
+	},
+	"evento4":{
+		"organizadorEvento":"Dev.F",
+		"nombreEvento":"Hacker's night",
+		"descripcionEvento":"Explore the history of the classic Lorem Ipsum passage and generate your own text using any number of characters, words, sentences or paragraphs.",
+		"lugarEvento":"Impact Hub CDMX",
+		"imagenEvento":"http://i.ngenespanol.com/dam/traveler/agenda/17/03/14/imagen.jpg.imgw.1280.1280.jpeg",
+		"capacidadEvento":"Maximo 100 personas",
+		"fechaEvento":"2018-03-05",
+		"horaEvento":"02:00"
 	}
 }
 
