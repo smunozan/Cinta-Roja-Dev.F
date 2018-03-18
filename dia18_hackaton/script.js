@@ -18,9 +18,6 @@ function enviarDatos(){
 }
 
 
-
-
-
 google.charts.load('upcoming', {
         'packages': ['geochart']
       });
